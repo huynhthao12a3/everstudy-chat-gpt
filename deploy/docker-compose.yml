@@ -4,7 +4,7 @@ services:
     container_name: freegpt35
     restart: always
     environment:
-      TZ: 'UTC'
+      TZ: 'Etc/UTC'
       # NEXT_API_KEY: "your key"
       # NEXT_PROXY: "http://127.0.0.1:7890"
     ports:
