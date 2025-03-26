@@ -41,7 +41,7 @@ export class ProofTokenGenerator {
 
   private static getFormattedTimestamp(): string {
     // const timeZone = process.env.TZ || Intl.DateTimeFormat().resolvedOptions().timeZone
-    const timeZone = process.env.TZ || "Etc/UTC";
+    const timeZone = process.env.TZ || "Etc/UTC"
     const zonedDate = toZonedTime(new Date(), timeZone)
     const pattern = "EEE MMM d yyyy HH:mm:ss 'GMT'xx (zzzz)"
     return format(zonedDate, pattern, { timeZone })
